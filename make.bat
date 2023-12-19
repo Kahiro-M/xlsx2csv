@@ -1,0 +1,1 @@
+pyinstaller --onefile --icon=icon.ico xlsx2csv.py
