@@ -3,7 +3,7 @@ import pandas as pd
 
 def toCsv(inputFile):
     outputFile = inputFile.rsplit('.', 1)[0] + '.csv'
-    pd.read_excel(inputFile).to_csv(outputFile)
+    pd.read_excel(inputFile).to_csv(outputFile,encoding="utf_8_sig")
 
 
 
