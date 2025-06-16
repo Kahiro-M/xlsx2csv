@@ -7,7 +7,10 @@ def toCsv(inputFile):
 
 
 
-# 使用例
-inputFile = input("変換したいファイルのパスを入力してください: ")
-
-toCsv(inputFile)
+if __name__ == '__main__':
+    if(len(sys.argv)<2):
+        # 使用例
+        inputFile = input("変換したいファイルのパスを入力してください: ")
+    else:
+        inputFile = sys.argv[1]
+    toCsv(inputFile)
