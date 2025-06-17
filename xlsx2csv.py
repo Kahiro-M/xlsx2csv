@@ -1,5 +1,6 @@
 import pathlib
 import pandas as pd
+import sys
 
 def toCsv(inputFile):
     outputFile = inputFile.rsplit('.', 1)[0] + '.csv'
@@ -8,9 +9,10 @@ def toCsv(inputFile):
 
 
 if __name__ == '__main__':
+    print('====== xlsx -> csv ======')
     if(len(sys.argv)<2):
         # 使用例
-        inputFile = input("変換したいファイルのパスを入力してください: ")
+        inputFile = input("変換したいxlsxファイルのパスを入力してください: ")
     else:
         inputFile = sys.argv[1]
     toCsv(inputFile)
